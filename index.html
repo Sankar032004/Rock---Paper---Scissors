@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div id="menu">
+        <h2>Select Game Mode</h2>
+        <button onclick="startGame('computer')">Play vs Computer</button>
+        <button onclick="startGame('2')">2 Players</button>
+    </div>
+
+    <!-- Game -->
+    <div id="game" style="display:none;">
+        <h1>Rock - Paper - Scissors</h1>
+
+        <!-- Choices -->
+        <div id="container">
+            <div class="choice" id="rock">
+                <img src="images/rock.png" alt="Rock">
+            </div>
+            <div class="choice" id="paper">
+                <img src="images/paper.png" alt="Paper">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="images/scissors.png" alt="Scissors">
+            </div>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="score-board">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p id="player1-name">You</p>
+            </div>
+            <div class="score">
+                <p id="comp-score">0</p>
+                <p id="player2-name">Computer</p>
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div class="msg-container">
+            <p id="msg">Select your move to start the game.</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button onclick="resetGame()">Reset</button>
+            <button onclick="backToMenu()">Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

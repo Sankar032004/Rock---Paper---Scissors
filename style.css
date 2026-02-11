@@ -1,0 +1,192 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+    background: linear-gradient(90deg, #081b31, #0a3d62);
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Choices */
+.choice {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background: #1e3799;
+}
+
+.choice img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+/* Container */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+/* Scoreboard */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 28px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.score p {
+    margin: 5px 0;
+}
+
+#user-score,
+#comp-score {
+    font-size: 55px;
+    font-weight: bold;
+    color: #f1c40f;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Message Box */
+.msg-container {
+    margin-top: 60px;
+}
+
+#msg {
+    background: linear-gradient(90deg, #081b31, #0a3d62);
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 50px;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#msg:hover {
+    transform: scale(1.05);
+}
+
+/* Controls */
+.controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls button {
+    background: #f1c40f;
+    color: #081b31;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.controls button:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* Menu */
+#menu {
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 40px 0;
+    position: relative;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.8),
+        0 0 20px rgba(0, 198, 255, 0.6),
+        0 0 30px rgba(0, 198, 255, 0.4);
+    animation: glow 2s infinite alternate;
+}
+
+#menu h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 5px;
+}
+
+#menu button {
+    display: block;
+    width: 220px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+    color: #2c5364;
+    transition: all 0.3s ease;
+}
+
+#menu button:hover {
+    background: #00c6ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+#menu button:active {
+    transform: scale(0.98);
+}
