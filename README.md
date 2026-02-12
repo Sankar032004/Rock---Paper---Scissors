@@ -5,5 +5,5 @@ After v2 update
   - First to 5 points wins
   - Match winner announcement
   - Game disables after win
-  - Improved UI messages
+  - Improved UI messages and design
   - When play 2 person rock-paper-scissor  img hide and change Position
