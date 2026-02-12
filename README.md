@@ -6,4 +6,4 @@ After v2 update
   - Match winner announcement
   - Game disables after win
   - Improved UI messages and design
-  - When play 2 person rock-paper-scissor  img hide and change Position
+  - When play 2 person rock-paper-scissor  img hide and change Position & just show Click Me
